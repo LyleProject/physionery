@@ -295,3 +295,12 @@ address{font-style:normal;margin-bottom:24px}
 .sec--dark .wrap,.sec--grad .wrap,.sec--mint .wrap{position:relative;z-index:2}
 .wave--m{bottom:-2px}
 .wave--m.wave--top{top:-2px;bottom:auto}
+/* faixa de serviços com bordas onduladas + rodapé */
+.marquee{transform:none;margin:0;padding:78px 0 74px;background:linear-gradient(100deg,var(--tq),var(--tq-d))}
+.marquee .wave--m{width:104%;left:-2%;fill:#fff}
+.marquee .wave--m:not(.wave--top){height:clamp(40px,5vw,70px)}
+.marquee .wave--m.wave--top{height:clamp(36px,4.5vw,62px)}
+.marquee__t{position:relative;z-index:2}
+.wave--foot{fill:var(--ink-d)!important}
+.sec--grad{padding-bottom:150px}
+.foot{padding-top:30px}
