@@ -285,3 +285,13 @@ address{font-style:normal;margin-bottom:24px}
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .js .reveal{opacity:1;transform:none}
 }
+
+/* transições onduladas entre seções */
+.wave--m{pointer-events:none;z-index:1;height:clamp(50px,7vw,100px);transform-origin:center;animation:waveX 12s ease-in-out infinite alternate}
+.wave--m.wave--top{height:clamp(44px,6vw,86px)}
+.sec>.wave--m{width:104%;left:-2%}
+.sec--dark>.wave--m,.sec--grad>.wave--m{fill:#fff}
+.sec--mint>.wave--m{fill:#fff}
+.sec--dark .wrap,.sec--grad .wrap,.sec--mint .wrap{position:relative;z-index:2}
+.wave--m{bottom:-2px}
+.wave--m.wave--top{top:-2px;bottom:auto}
